@@ -1,0 +1,47 @@
+<!doctype html>
+
+<html lang="en"> 
+  <head>
+    <meta charset="utf-8" />
+    <title>Employee Management Application</title>
+    <script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+    <script src="../node_modules/lit/polyfill-support.js"></script>
+    <script type="module" src="../my-element.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <style>
+      body{
+        ---bg:#fff;
+        background: var(--bg);
+        font-family: 'Quicksand', sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      @media (max-width: 767px) {
+        body{
+          display: block;
+        }
+      }
+      p {
+        padding: 8px;
+      }
+      .listing {
+       --white:#fff;
+       --gray: #8b8b8b; 
+       --border: #d2d2d2;
+       --light-gray: #b2b2b2; 
+       --dark-gray: #555555; 
+       --red: #e74c4c;
+       --text-color: #262626;
+       --table-bg: #F8F8F8;
+       --modal-bg: rgba(0, 0, 0, 0.5);
+       --button-hover: #8c8b8b;
+      }
+    </style>
+  </head>
+  <body>
+    <employee-list class="listing"></employee-list>
+  </body>
+</html>

@@ -1,0 +1,651 @@
+{
+  "schemaVersion": "1.0.0",
+  "readme": "",
+  "modules": [
+    {
+      "kind": "javascript-module",
+      "path": "AddEmployee.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "AddEmployee",
+          "members": [
+            {
+              "kind": "method",
+              "name": "getText",
+              "parameters": [
+                {
+                  "name": "key"
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "addOrEditEmployee"
+            },
+            {
+              "kind": "field",
+              "name": "firstName",
+              "privacy": "public",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "attribute": "firstName"
+            },
+            {
+              "kind": "field",
+              "name": "lastName",
+              "privacy": "public",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "attribute": "lastName"
+            },
+            {
+              "kind": "field",
+              "name": "email",
+              "privacy": "public",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "attribute": "email"
+            },
+            {
+              "kind": "field",
+              "name": "department",
+              "privacy": "public",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "attribute": "department"
+            },
+            {
+              "kind": "field",
+              "name": "position",
+              "privacy": "public",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "attribute": "position"
+            },
+            {
+              "kind": "field",
+              "name": "errorMessage",
+              "privacy": "public",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "attribute": "errorMessage"
+            },
+            {
+              "kind": "field",
+              "name": "language",
+              "privacy": "public",
+              "type": {
+                "text": "string"
+              },
+              "attribute": "language"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "errorMessage",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "fieldName": "errorMessage"
+            },
+            {
+              "name": "firstName",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "fieldName": "firstName"
+            },
+            {
+              "name": "lastName",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "fieldName": "lastName"
+            },
+            {
+              "name": "email",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "fieldName": "email"
+            },
+            {
+              "name": "department",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "fieldName": "department"
+            },
+            {
+              "name": "position",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "fieldName": "position"
+            },
+            {
+              "name": "language",
+              "type": {
+                "text": "string"
+              },
+              "fieldName": "language"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "add-employee",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "AddEmployee",
+          "declaration": {
+            "name": "AddEmployee",
+            "module": "AddEmployee.js"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "add-employee",
+          "declaration": {
+            "name": "AddEmployee",
+            "module": "AddEmployee.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "app.js",
+      "declarations": [],
+      "exports": []
+    },
+    {
+      "kind": "javascript-module",
+      "path": "my-element.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "EmployeeList",
+          "members": [
+            {
+              "kind": "method",
+              "name": "getText",
+              "parameters": [
+                {
+                  "name": "key"
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "loadEmployees"
+            },
+            {
+              "kind": "method",
+              "name": "saveEmployees"
+            },
+            {
+              "kind": "method",
+              "name": "loadDummyData"
+            },
+            {
+              "kind": "method",
+              "name": "isEmailUnique",
+              "parameters": [
+                {
+                  "name": "email"
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "addOrEditEmployee"
+            },
+            {
+              "kind": "method",
+              "name": "clearForm"
+            },
+            {
+              "kind": "method",
+              "name": "confirmDelete",
+              "parameters": [
+                {
+                  "name": "index"
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "deleteEmployee"
+            },
+            {
+              "kind": "method",
+              "name": "closeModal"
+            },
+            {
+              "kind": "method",
+              "name": "removeEmployee",
+              "parameters": [
+                {
+                  "name": "index"
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "editEmployeeInline",
+              "parameters": [
+                {
+                  "name": "index"
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "saveInlineEmployee",
+              "parameters": [
+                {
+                  "name": "index"
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "searchEmployees"
+            },
+            {
+              "kind": "method",
+              "name": "toggleViewMode"
+            },
+            {
+              "kind": "method",
+              "name": "toggleLanguage"
+            },
+            {
+              "kind": "field",
+              "name": "language",
+              "privacy": "public",
+              "type": {
+                "text": "string"
+              },
+              "attribute": "language"
+            },
+            {
+              "kind": "field",
+              "name": "searchQuery",
+              "privacy": "public",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "attribute": "searchQuery"
+            },
+            {
+              "kind": "field",
+              "name": "currentPage",
+              "privacy": "public",
+              "type": {
+                "text": "number"
+              },
+              "default": "1",
+              "attribute": "currentPage"
+            },
+            {
+              "kind": "field",
+              "name": "itemsPerPage",
+              "privacy": "public",
+              "type": {
+                "text": "number"
+              },
+              "default": "5",
+              "attribute": "itemsPerPage"
+            },
+            {
+              "kind": "field",
+              "name": "editingIndex",
+              "privacy": "public",
+              "type": {
+                "text": "null"
+              },
+              "default": "null",
+              "attribute": "editingIndex"
+            },
+            {
+              "kind": "field",
+              "name": "inlineEditIndex",
+              "privacy": "public",
+              "type": {
+                "text": "null"
+              },
+              "default": "null",
+              "attribute": "inlineEditIndex"
+            },
+            {
+              "kind": "field",
+              "name": "errorMessage",
+              "type": {
+                "text": "string"
+              },
+              "default": "''"
+            },
+            {
+              "kind": "field",
+              "name": "viewMode",
+              "privacy": "public",
+              "type": {
+                "text": "string"
+              },
+              "default": "'table'",
+              "attribute": "viewMode"
+            },
+            {
+              "kind": "field",
+              "name": "showModal",
+              "privacy": "public",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "attribute": "showModal"
+            },
+            {
+              "kind": "field",
+              "name": "employeeToDelete",
+              "privacy": "public",
+              "type": {
+                "text": "null"
+              },
+              "default": "null",
+              "attribute": "employeeToDelete"
+            },
+            {
+              "kind": "field",
+              "name": "employees",
+              "privacy": "public",
+              "type": {
+                "text": "array"
+              },
+              "attribute": "employees"
+            },
+            {
+              "kind": "field",
+              "name": "filteredEmployees",
+              "privacy": "public",
+              "type": {
+                "text": "array"
+              },
+              "attribute": "filteredEmployees"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "employees",
+              "type": {
+                "text": "array"
+              },
+              "fieldName": "employees"
+            },
+            {
+              "name": "filteredEmployees",
+              "type": {
+                "text": "array"
+              },
+              "fieldName": "filteredEmployees"
+            },
+            {
+              "name": "searchQuery",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "fieldName": "searchQuery"
+            },
+            {
+              "name": "currentPage",
+              "type": {
+                "text": "number"
+              },
+              "default": "1",
+              "fieldName": "currentPage"
+            },
+            {
+              "name": "itemsPerPage",
+              "type": {
+                "text": "number"
+              },
+              "default": "5",
+              "fieldName": "itemsPerPage"
+            },
+            {
+              "name": "editingIndex",
+              "type": {
+                "text": "null"
+              },
+              "default": "null",
+              "fieldName": "editingIndex"
+            },
+            {
+              "name": "inlineEditIndex",
+              "type": {
+                "text": "null"
+              },
+              "default": "null",
+              "fieldName": "inlineEditIndex"
+            },
+            {
+              "name": "viewMode",
+              "type": {
+                "text": "string"
+              },
+              "default": "'table'",
+              "fieldName": "viewMode"
+            },
+            {
+              "name": "showModal",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "fieldName": "showModal"
+            },
+            {
+              "name": "employeeToDelete",
+              "type": {
+                "text": "null"
+              },
+              "default": "null",
+              "fieldName": "employeeToDelete"
+            },
+            {
+              "name": "language",
+              "type": {
+                "text": "string"
+              },
+              "fieldName": "language"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "employee-list",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "EmployeeList",
+          "declaration": {
+            "name": "EmployeeList",
+            "module": "my-element.js"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "employee-list",
+          "declaration": {
+            "name": "EmployeeList",
+            "module": "my-element.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "navigation-menu.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "NavigationMenu",
+          "members": [],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "navigation-menu",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "NavigationMenu",
+          "declaration": {
+            "name": "NavigationMenu",
+            "module": "navigation-menu.js"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "navigation-menu",
+          "declaration": {
+            "name": "NavigationMenu",
+            "module": "navigation-menu.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "router.js",
+      "declarations": [
+        {
+          "kind": "function",
+          "name": "initRouter",
+          "parameters": [
+            {
+              "name": "outlet"
+            }
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "initRouter",
+          "declaration": {
+            "name": "initRouter",
+            "module": "router.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "styles.js",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "employeeStyles",
+          "default": "css`\n  :host {\n        display: block;\n        border: solid 1px gray;\n        padding: 16px;\n        max-width: 1400px;\n        min-width: 600px;\n        color: var(--text-color, #333);\n        border-radius:8px;\n        margin-bottom: 20px;\n      }\n      .list-wrapper {\n        position: relative;\n      }\n      .language-switch {\n        cursor: pointer;\n        display: inline-block;\n        position: absolute;\n        right: 0;\n      }\n\n      button, .language-switch {\n        margin: 8px 0;\n        padding: 4px 8px;\n        height: 30px;\n        border-radius: 8px;\n        border: 1px solid var(--light-gray);\n      }\n      button:hover, .language-switch:hover {\n        cursor: pointer;\n        background-color: var(--button-hover);\n      }\n      .input-container{\n        display: grid;\n        grid-gap: 10px 12px;\n        grid-template-columns: auto auto;\n      }\n      .search-input {\n        width: 100%;\n      }\n      input, select {\n        height: 30px;\n        text-indent: 5px;\n        border: 1px solid var(--border);;\n        border-radius: 8px;\n        min-width: 100px;\n      }\n      input[type=\"date\"]:before {\n        color: lightgrey;\n        content: attr(placeholder) !important;\n        margin-right: 0.5em;\n        font-size: 8px;\n      }\n      input[type=\"date\"]:focus:before {\n        content: '' !important;\n      }\n      .table-wrapper{\n        margin: 10px 70px 70px;\n        box-shadow: 0px 35px 50px rgba( 0, 0, 0, 0.2 );\n      }\n      .list-table {\n          border-radius: 5px;\n          font-size: 12px;\n          font-weight: normal;\n          border: none;\n          border-collapse: collapse;\n          width: 100%;\n          max-width: 100%;\n          white-space: nowrap;\n          background-color: white;\n      }\n\n      .list-table td, .list-table th {\n          text-align: center;\n          padding: 8px;\n      }\n\n      .list-table td {\n          border-right: 1px solid var(--light-gray);\n          font-size: 12px;\n      }\n\n      .list-table thead th {\n          color: var(--text-color);\n          background: var(--light-gray, #333);\n      }\n\n\n      .list-table thead th:nth-child(odd) {\n          color: var(--white);\n          background: var(--dark-gray, #333);\n      }\n\n      .list-table tr:nth-child(even) {\n          background: var(--table-bg);\n      }\n\n      @media (max-width: 767px) {\n          :host {\n            min-width: unset;\n          }\n          .list-table {\n              display: block;\n              width: 100%;\n          }\n          .table-wrapper:before{\n              display: block;\n              text-align: right;\n              font-size: 11px;\n              color: white;\n              padding: 0 0 10px;\n          }\n          .list-table thead, .list-table tbody, .list-table thead th {\n              display: block;\n          }\n          .list-table thead th:last-child{\n              border-bottom: none;\n          }\n          .list-table thead {\n              float: left;\n          }\n          .list-table tbody {\n              width: auto;\n              position: relative;\n              overflow-x: auto;\n          }\n          .list-table td, .list-table th {\n              padding: 20px .625em .625em .625em;\n              height: 60px;\n              vertical-align: middle;\n              box-sizing: border-box;\n              overflow-x: hidden;\n              overflow-y: auto;\n              width: 120px;\n              font-size: 13px;\n              text-overflow: ellipsis;\n          }\n\n          .list-table .action-td {\n            padding: 0;\n          }\n          .list-table thead th {\n              text-align: left;\n              border-bottom: 1px solid var(--light-gray);\n          }\n          .list-table tbody tr {\n              display: table-cell;\n          }\n          .list-table tbody tr:nth-child(odd) {\n              background: none;\n          }\n          .list-table tr:nth-child(even) {\n              background: transparent;\n          }\n          .list-table tr td:nth-child(odd) {\n              background: var(--table-bg);\n              border-right: 1px solid var(--border);\n          }\n          .list-table tr td:nth-child(even) {\n              border-right: 1px solid var(--border);\n          }\n          .list-table tbody td {\n              display: block;\n              text-align: center;\n          }\n      }\n\n      .search-bar {\n        margin-bottom: 10px;\n      }\n      .error-message {\n        color: var(--red);\n        font-size: 12px;\n        margin-top: 5px;\n      }\n      .edit-input {\n        width: 100px;\n        padding: 2px;\n        margin: 0;\n      }\n      .employee-list-view {\n        display: flex;\n        flex-direction: column;\n        gap: 10px;\n        margin-top: 20px;\n        max-height: 450px;\n        overflow: scroll;\n      }\n      .employee-list-view .list-view:nth-child(odd) {\n        background-color: var(--light-gray);\n      }\n      .modal {\n        position: fixed;\n        top: 0;\n        left: 0;\n        width: 100%;\n        height: 100%;\n        background: var(--modal-bg);\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        z-index: 1000;\n      }\n      .modal-content {\n        background: white;\n        padding: 20px;\n        border-radius: 5px;\n        text-align: center;\n      }\n      .modal button {\n        margin: 0 5px;\n      }\n\n      button svg {\n        width: 15px;\n        height: 15px;\n      }\n`"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "employeeStyles",
+          "declaration": {
+            "name": "employeeStyles",
+            "module": "styles.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dev/localization.js",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "localization",
+          "type": {
+            "text": "object"
+          },
+          "default": "{\n    en: {\n      addEmployee: 'Add Employee',\n      firstName: 'First Name',\n      lastName: 'Last Name',\n      email: 'Email',\n      phone: 'Phone',\n      department: 'Department',\n      actions: 'Actions',\n      edit: 'Edit',\n      delete: 'Delete',\n      updateEmployee: 'Update Employee',\n      search: 'Search by name or email',\n      listView: 'List View',\n      tableView: 'Table View',\n      next: 'Next',\n      previous: 'Previous',\n      page: 'Page',\n      noEmployeesFound: 'No employees found.',\n      employeeList: 'Employee List',\n      switchToTable: 'Switch to Table View',\n      switchToList: 'Switch to List View',\n      dateEmployment: 'Date of Employment',\n      dateBirth: 'Date of Birth',\n      position: 'Position',\n      save: 'Save',\n      cancel: 'Cancel',\n      yes: 'Yes',\n      no: 'No',\n      areYouSure: 'Are you sure you want to delete this employee?'\n    },\n    tr: {\n        addEmployee: 'Çalışan Ekle',\n        firstName: 'Ad',\n        lastName: 'Soyad',\n        email: 'Eposta',\n        phone: 'Telefon',\n        department: 'Bölüm',\n        actions: 'Eylemler',\n        edit: 'Düzenle',\n        delete: 'Sil',\n        updateEmployee: 'Düzenle',\n        search: 'Isme veya epostayla ara',\n        listView: 'Liste görüntüsü',\n        tableView: 'Tablo görüntüsü',\n        next: 'Sonraki',\n        previous: 'Önceki',\n        page: 'Sayfa',\n        noEmployeesFound: 'Çalışan bulunamadı.',\n        employeeList: 'Çalıșan Listesi',\n        switchToTable: 'Tablo goruntusune gec',\n        switchToList: 'Listelemeye gec',\n        dateEmployment: 'İșe Giriș Tarihi',\n        dateBirth: 'Doğum Tarihi',\n        position: 'Pozisyon',\n        save: 'Kaydet',\n        cancel: 'Iptal',\n        yes: 'Evet',\n        no: 'Hayır',\n        areYouSure: 'Kaydı silmek için eminmisiniz?'\n    }\n  }"
+        },
+        {
+          "kind": "function",
+          "name": "getCurrentLang"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "localization",
+          "declaration": {
+            "name": "localization",
+            "module": "dev/localization.js"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "getCurrentLang",
+          "declaration": {
+            "name": "getCurrentLang",
+            "module": "dev/localization.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "test/my-element_test.js",
+      "declarations": [],
+      "exports": []
+    },
+    {
+      "kind": "javascript-module",
+      "path": "docs-src/_data/api.11tydata.js",
+      "declarations": [],
+      "exports": []
+    }
+  ]
+}
