@@ -2,6 +2,11 @@
 npm install 
 npm run serve:prod to run server at locally
 
+![screenshot](https://github.com/gokhanozt/employeeLitElement/blob/main/Screenshot%202024-10-07%20at%2023.20.45.png?raw=true)
+
+![screenshot](https://github.com/gokhanozt/employeeLitElement/blob/main/Screenshot%202024-10-07%20at%2023.20.56.png?raw=true)
+
+![screenshot](https://github.com/gokhanozt/employeeLitElement/blob/main/Screenshot%202024-10-07%20at%2023.21.05.png?raw=true)
 
 # LitElement JavaScript starter
 
